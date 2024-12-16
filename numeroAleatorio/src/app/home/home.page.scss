@@ -1,0 +1,98 @@
+/* Estilos generales aplicados a todos los tamaños */
+ion-content {
+  background-color: #121212; /* Fondo negro */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.ion-padding {
+  width: 100%;
+  padding: 20px;
+  text-align: center;
+  background-color: #1e1e1e; /* Fondo oscuro del contenedor */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+  border-radius: 10px;
+}
+
+ion-input {
+  margin-bottom: 15px;
+  --padding-start: 10px;
+  --padding-end: 10px;
+  color: #ffffff; /* Texto en blanco */
+  border-radius: 8px;
+  width: 100%;
+}
+
+ion-button {
+  margin-top: 15px;
+  --background: #00acc1; /* Color cian para el botón */
+  --background-hover: #00838f;
+  --border-radius: 8px;
+  font-weight: bold;
+  color: #ffffff;
+  width: 100%;
+}
+
+p {
+  margin-top: 20px;
+  color: #b2ebf2; /* Texto cian claro */
+}
+
+/* Pantalla pequeña: estilos para ancho máximo de 600px */
+@media (max-width: 600px) {
+  .ion-padding {
+    font-size: 1em;
+  }
+
+  ion-input {
+    font-size: 1em;
+  }
+
+  ion-button {
+    font-size: 1em;
+  }
+
+  p {
+    font-size: 1.1em;
+  }
+}
+
+/* Pantalla mediana: estilos para ancho entre 601px y 1024px */
+@media (min-width: 601px) and (max-width: 1024px) {
+  .ion-padding {
+    font-size: 1.2em;
+  }
+
+  ion-input {
+    font-size: 1.1em;
+  }
+
+  ion-button {
+    font-size: 1.1em;
+  }
+
+  p {
+    font-size: 1.2em;
+  }
+}
+
+/* Pantalla grande: estilos para ancho mínimo de 1025px */
+@media (min-width: 1025px) {
+  .ion-padding {
+    font-size: 1.4em;
+  }
+
+  ion-input {
+    font-size: 1.3em;
+  }
+
+  ion-button {
+    font-size: 1.3em;
+  }
+
+  p {
+    font-size: 1.3em;
+  }
+}

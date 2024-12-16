@@ -1,0 +1,18 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Generador de Número Aleatorio
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <div class="ion-padding">
+    <ion-input type="number" [(ngModel)]="numMin" placeholder="Introduce el número mínimo"></ion-input>
+    <ion-input type="number" [(ngModel)]="numMax" placeholder="Introduce el número máximo"></ion-input>
+    <ion-button expand="block" (click)="generaNumeroAleatorio()">Generar Número</ion-button>
+    <p *ngIf="numeroAleatorio !== null">El número aleatorio es: {{ numeroAleatorio }}</p>
+  </div>
+</ion-content>
+
+
